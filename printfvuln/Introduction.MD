@@ -115,6 +115,9 @@ Notice the address on vararg?
 Now looking back at the stack that address appears in 2 places. This is just a coincidence, but starting the address with the checkmark you can access data. The checkmarked address is index 1 and you can
 index downwards from there.
 
+![printf3](https://github.com/Joel-Flores123/pwnstuff/blob/main/printfvuln/images/printf3.png)
+As proof what would be considered index 3 was printed out by ```%3$p```.
+
 This is only an introduction ill probably post some examples later on.
 
 
