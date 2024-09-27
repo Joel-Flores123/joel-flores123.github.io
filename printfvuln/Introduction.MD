@@ -93,7 +93,7 @@ $ notation is what you will use to what data your format specifiers access.
 This will access a stack address relative to to the printf 
 
 Note printf starts from the beginning the parameters of printf and then goes downwards from there.
-for example if you had printf("%4$d", var1,var2,var3,var4); it would print out var4 so you must find where the first parameter to printf would be and that would be the base from where you start accessing stack addresses.
+As an example if you had ```printf("%4$d", var1,var2,var3,var4); ``` it would print out var4 so you must find where the first parameter to printf would be and that would be the base from where you start accessing stack addresses.
 
 ```
 #disclaimer the parameters for printf are not always top of stack, you would figure it by checking out what address the vararg corresponds to. Then start index after the address 
