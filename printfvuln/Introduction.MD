@@ -1,4 +1,4 @@
-Printf Vulnerabilities
+# Printf Vulnerabilities
 
 a printf vulnerability is caused because printf mixes data and "code".
 
