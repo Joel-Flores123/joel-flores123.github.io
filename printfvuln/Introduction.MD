@@ -105,11 +105,11 @@ rsp 0xff787804 0x1                   #printf %1$p
 ```
 Ripping this from gdb
 
-{https://github.com/Joel-Flores123/joel-flores123.github.io/blob/main/printfvuln/images/printf.png}
+![printf](https://github.com/Joel-Flores123/joel-flores123.github.io/blob/main/printfvuln/images/printf.png)
 
 Notice the address on vararg? 
 
-{https://github.com/Joel-Flores123/joel-flores123.github.io/blob/main/printfvuln/images/printf2.png}
+![printf2](https://github.com/Joel-Flores123/joel-flores123.github.io/blob/main/printfvuln/images/printf2.png)
 
 Now looking back at the stack that address appears in 2 places. This is just a coincidence, but starting the address with the checkmark you can access data. The checkmarked address is index 1 and you can
 index downwards from there.
