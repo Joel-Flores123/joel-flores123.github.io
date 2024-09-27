@@ -1,2 +1,1 @@
-# joel-flores123.github.io
-PWN stuff
+This is mostly going to be notes for pwning. And maybe some CTF writeups.
