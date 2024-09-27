@@ -74,13 +74,14 @@ For references lets say my format string was
 
 Back to gdb, lets say my %n was looking at 0xff787808, lets also say that in the same printf I also printed out 123456789. %n would write 10 into 0xff787814 transforming the stack to
 
+```
 rsp 0xff787804 0x1
     0xff787808 0xff787814 -> 0xa
     0xff78780c 0x1
     0xff787810 0x29
     0xff787814 0xa
     0xff787818 0x89
-
+```
 we succesfully wrote 10 to address 0xff787814 with that format string. Now if we were looking at any other address that did not an address to dereference it would segfault, much like %s.
 
 Now with all the important specifiers out of the way we can talk about $ notation.
