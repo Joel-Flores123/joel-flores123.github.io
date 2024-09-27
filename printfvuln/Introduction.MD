@@ -15,6 +15,7 @@ Before playing with printf vulnerabilities you should first know what format spe
 
 %s looks into an address and dereferences the address.
 
+```
 (pretend this is gdb)
 
 rsp 0xff787804 0x1
@@ -23,7 +24,7 @@ rsp 0xff787804 0x1
     0xff787810 0x29
     0xff787814 0x74
     0xff787818 0x89
-
+```
 if my %s was looking at address 0xff787808 we would print out 0x74. As that address contains an address that points to another address and so %s dereferences it.
 Now if we were to use %s on 0xff787814 a segfault would occur as it would attempt to derefence address 0x74 which is not a valid address.
 
